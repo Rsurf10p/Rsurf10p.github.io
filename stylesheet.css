@@ -1,0 +1,205 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+/* header */
+.header{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color:white;
+  color:#222222;
+  /* max-width: 1024px; */
+}
+
+
+.header-title{
+  padding: 20px 30px;
+  float:left;
+}
+
+.header-title h1 {
+  font-size: 24px;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+}
+
+.header-title h1 span{
+  display:block;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.header-title p{
+  display: none;
+}
+
+@media screen and (max-width:767px){
+  .header-title{
+    padding: 15px 0;
+    width: auto;
+  }
+  .header-title h1{
+    font-size: 20px;
+    line-height:1.2em;
+    padding: 0 0 0 15px;
+  }
+  .header-title h1 span{
+    font-size: 12px;
+    margin-left: 0 0 2px;
+    line-height: 1.2em;
+  }
+  .header-title p{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    line-height: 0;
+  }
+  .header-title i{
+    padding: 5.5px 7.75px;
+  }
+
+}
+
+.nav ul{
+  position: absolute;
+  top:50px;
+  right:0;
+  margin:-20px 0 0;
+  letter-spacing: -0.5em;
+  right:50px;
+}
+
+.nav ul li{
+  display: inline-block;
+  padding: 15px 10px;
+  margin-right: 20px;
+  letter-spacing: 0;
+}
+
+.nav ul li a{
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  color: #222222;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+
+@media screen and (max-width:767px){
+  .nav{
+    display:none;
+  }
+}
+
+.home_img{
+  max-width:100%;
+  height:auto;
+}
+
+
+/* #humberger{
+  float: right;
+  position:relative;
+  margin-top: 2%;
+  margin-right: 3%;
+  height:40px;
+  width:40px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#humberger div {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 24px;
+  background-color: black;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left:8px;
+}
+
+#humberger div:nth-of-type(1) {
+  top: 10px;
+}
+#humberger div:nth-of-type(2) {
+  top: 18px;
+}
+#humberger div:nth-of-type(3) {
+  bottom: 10px;
+}
+
+.humberger :hover{
+  color: white;
+  background-color: gray;
+  transition:0.1s;
+} */
+
+
+.mydata{
+  padding: 20px 40px;
+  text-align:center;
+
+}
+.mydata h2{
+  border-bottom: 1px solid gray;
+}
+.mydata span {
+  font-size:15px;
+}
+.mydata h2{
+  padding:0px 10px 10px 10px;
+}
+.mydata p{
+  padding:10px;
+
+}
+
+.footer{
+  position:absolute;
+  text-align: center;
+  font-size: 15px;
+  color:silver;
+  /* height: 75px; */
+  width: 100%;
+  background-color: #222222;
+  padding: 15px 0;
+}
+
+.icon a{
+  text-decoration: none;
+  color: silver;
+  padding:10px 10px;
+  margin:0 5px;
+}
+
+.icon :hover{
+  color:gray;
+  transition: 1s;
+}
+
+.footer p{
+  font-size: 14px;
+  padding-top: 10px;
+  line-height: 1.2em;
+}
+
+@media screen and (max-width:767px) {
+  .footer p{
+    font-size: 12px;
+
+  }
+}
