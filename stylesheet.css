@@ -18,7 +18,7 @@ header{
   position: relative;
   width: 100%;
   height: auto;
-  padding: 10px 30px;
+  padding: 10px 50px;
 }
 
 
@@ -38,13 +38,21 @@ header{
 
 
 /* ーーーーーーーーー　main内　ーーーーーーーーー */
-.areamap{
+.content_map{
   text-align: center;
+  padding: 20px 30px;
+}
+
+
+.areamap_image{
+  width: auto;
+  height: auto;
 }
 
 
 .content_spot {
   text-align: center;
+  padding: 20px 30px;
 }
 
 .box{
@@ -86,4 +94,19 @@ footer{
   text-align: center;
   padding: 30px 0px;
   margin-top: 30px;
+}
+
+
+
+.icon a{
+  text-decoration: none;
+  color: silver;
+  font-size: 30px;
+  padding: 5px 5px;
+
+}
+
+.copyright{
+  padding: 20px 0 0 0;
+  font-size: 14px;
 }
