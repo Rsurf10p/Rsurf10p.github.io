@@ -38,6 +38,11 @@ header{
 
 
 /* ーーーーーーーーー　main内　ーーーーーーーーー */
+.areamap{
+  text-align: center;
+}
+
+
 .content_spot {
   text-align: center;
 }
