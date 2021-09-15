@@ -178,7 +178,7 @@ nav ul li a{
 
   .box{
     padding: ;
-    margin:10px 10px;
+    margin:10px 0;
     display: inline-block;　
   }
 
@@ -227,7 +227,7 @@ nav ul li a{
 
 @media screen and (max-width:767px){
   .content_lesson{
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   .content_lesson h1{
@@ -243,6 +243,16 @@ nav ul li a{
   .lesson_image{
     width: 100%;
     height: auto;
+  }
+
+  .sentence_lesson{
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .sentence_lesson h1{
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 
