@@ -20,16 +20,17 @@
   <header>
     <img src = "image/logo.png" class = "header_logo">
     <h1 class="header_title">
+      <a id="top"></a>
       <span>T</span>okushima <span>U</span>iversity <span>S</span>urfing <span>C</span>lub
     </h1>
 
     <!-- pc nav -->
     <nav id="pcnav">
       <ul>
-        <li><a href="https://www.yasushimurata.com/">MAP</a></li>
-        <li><a href="https://www.yasushimurata.com/">SPOT</a></li>
-        <li><a href="https://www.yasushimurata.com/">LESSON</a></li>
-        <li><a href="https://www.yasushimurata.com/">CONTACT</a></li>
+        <li><a href="#map">MAP</a></li>
+        <li><a href="#spot">SPOT</a></li>
+        <li><a href="#lesson">LESSON</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
 
@@ -47,7 +48,7 @@
 
         <label for="label1">
           <!-- 親要素の名前 -->
-          <p>TOP</p>
+          <p><a href="#top">TOP</a></p>
         </label>
         <input type="checkbox" id="label1" class="cssacc" />
         <div class="accshow">
@@ -59,7 +60,7 @@
         </div>
 
         <label for="label2">
-        <p>MAP</p>
+          <p><a href="#map">AREA MAP</a></p>
         </label>
         <input type="checkbox" id="label2" class="cssacc" />
         <div class="accshow">
@@ -70,18 +71,18 @@
         </div>
 
         <label for="label3">
-          <p>SPOT</p><p>＋</p>
+          <p><a href="#spot">SURF SPOT</a></p>
         </label>
         <input type="checkbox" id="label3" class="cssacc" />
         <div class="accshow">
-          <p>小松</p>
+          <!-- <p>小松</p>
           <p>内妻</p>
           <p>宍喰</p>
-          <p>郁美</p>
+          <p>郁美</p> -->
         </div>
 
         <label for="label4">
-          <p>LESSON</p>
+          <p><a href="#lesson">ONLINE LESSON</a></p>
         </label>
         <input type="checkbox" id="label4" class="cssacc" />
         <div class="accshow">
@@ -92,7 +93,7 @@
         </div>
 
         <label for="label5">
-          <p>CONTACT</p>
+          <p><a href="#contact">CONTACT</a></p>
         </label>
         <input type="checkbox" id="label5" class="cssacc" />
         <div class="accshow">
@@ -113,7 +114,7 @@
 
   <!-- content -->
   <div class="content_map">
-    <h1>MAP</h1>
+    <h1><a id="map">MAP</a></h1>
     <div class="areamap">
       <img src="image/tokushima.png" usemap="#ImageMap" alt="mapimage" class="areamap_image" />
         <map name="ImageMap">
@@ -130,7 +131,7 @@
 
 
   <div class="content_spot">
-    <h1>SURF SPOT</h1>
+    <h1><a id="spot">SURF SPOT</a></h1>
     <div class="box">
       <div class="sentence_box">
         <h1>小松海岸</h1>
@@ -185,7 +186,7 @@
 
 
   <div class="content_lesson">
-    <h1>ONLINE LESSON</h1>
+    <h1><a id="lesson">ONLINE LESSON</a></h1>
 
     <div class="lesson_detail">
       <img src = "image/profile.jpg" class = "lesson_image">
@@ -228,6 +229,7 @@
 
   <!-- footer -->
   <footer id="footer">
+    <a id="contact"></a>
     <div class="icon">
       <a class="fab fa-instagram" href="https://www.instagram.com/tokudaisurfingclub/?hl=ja" target="_blank"></a>
       <a class="fab fa-twitter" href="https://twitter.com/3xi1jdch9r6kq4e" target="_blank"></a>
