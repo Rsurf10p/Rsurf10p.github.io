@@ -11,7 +11,28 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script type="text/javascript" src="js/footerFixed.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- <script type="text/javascript" src="js/gnav.js"></script> -->
+
+  <!-- jQuery.jsの読み込み -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <!-- スムーズスクロール部分の記述 -->
+  <script>
+  $(function(){
+     // #で始まるアンカーをクリックした場合に処理
+     $('a[href^=#]').click(function() {
+        // スクロールの速度
+        var speed =300; // ミリ秒
+        // アンカーの値取得
+        var href= $(this).attr("href");
+        // 移動先を取得
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        // 移動先を数値で取得
+        var position = target.offset().top;
+        // スムーススクロール
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+     });
+  });
+  </script>
 </head>
 
 
@@ -44,12 +65,15 @@
 
       <div id="gnav-content">
         <!-- タイトルを記載ください -->
-        <div class="humb-menu__title">TUSC</div>
+        <div class="humb-menu__title">
+          TUSC
+        </div>
 
         <label for="label1">
           <!-- 親要素の名前 -->
           <p><a href="#top">TOP</a></p>
         </label>
+
         <input type="checkbox" id="label1" class="cssacc" />
         <div class="accshow">
           <!-- 子要素の名前 -->

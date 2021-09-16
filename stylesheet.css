@@ -114,12 +114,14 @@ header{
     border: solid 1px #d1caca;
     border-radius: 3px;
   }
+
   #gnav-input:checked ~ #gnav-content {
     top: 0;
   }
+
   #gnav-content {
     text-align: center;
-    background-color: rgba(20,50,50,0.9);
+    background-color: rgba(20,50,50,0.95);
     position: fixed;
     top: -100%;
     left: 0;
@@ -127,50 +129,53 @@ header{
     transition: 0.3s;
     width: 100%;
   }
+
   .humb-menu__title {
     padding: 1.5rem;
     color: white;
     font-weight: bold;
     background-color: rgba(20,50,50,1);
     border-bottom: 5px solid gray;
-
-
   }
+
   .humb-menu label {
     font-weight: bold;
     color: white;
-    /* display:block; */
+    display:block;
     justify-content: space-between;
     /* padding: 1.3rem; */
     padding: 0;
     cursor: pointer;
-    border-top: 2.5px solid #c7c5c5;
-    text-align: center;
+    border-top: 0.5px solid gray;
+    /* text-align: center; */
   }
 
   .humb-menu #gnav-content label a{
     text-decoration: none;
     color: white;
-    display:inline-block;
+    display:flex;
     padding: 20px;
   }
 
   .humb-menu input {
     display: none;
   }
+
   .humb-menu .accshow {
     height: 0;
     overflow: hidden;
   }
+
   .humb-menu .accshow p {
     padding: 1.5rem;
     color: white;
     border-top: 0.5px solid #c7c5c5;
-
   }
-  .humb-menu .cssacc:checked + .accshow {
+
+  .humb-menu .cssacc:checked +　.accshow {
     height: auto;
   }
+
 }
   /* ------------------------- */
 
