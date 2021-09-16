@@ -10,7 +10,8 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script type="text/javascript" src="js/footerFixed.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script type="text/javascript" src="js/gnav.js"></script> -->
 </head>
 
 
@@ -22,7 +23,8 @@
       <span>T</span>okushima <span>U</span>iversity <span>S</span>urfing <span>C</span>lub
     </h1>
 
-    <nav>
+    <!-- pc nav -->
+    <nav id="pcnav">
       <ul>
         <li><a href="https://www.yasushimurata.com/">MAP</a></li>
         <li><a href="https://www.yasushimurata.com/">SPOT</a></li>
@@ -30,6 +32,78 @@
         <li><a href="https://www.yasushimurata.com/">CONTACT</a></li>
       </ul>
     </nav>
+
+    <!-- iphone nav -->
+    <div class="humb-menu">
+
+      <input id="gnav-input" type="checkbox">
+      <label for="gnav-input" id="gnav-btn">
+        <div i class="fas fa-bars"></div>
+      </label>
+
+      <div id="gnav-content">
+        <!-- タイトルを記載ください -->
+        <div class="humb-menu__title">TUSC</div>
+
+        <label for="label1">
+          <!-- 親要素の名前 -->
+          <p>TOP</p>
+        </label>
+        <input type="checkbox" id="label1" class="cssacc" />
+        <div class="accshow">
+          <!-- 子要素の名前 -->
+          <!-- <p>content</p>
+          <p>content</p>
+          <p>content</p>
+          <p>content</p> -->
+        </div>
+
+        <label for="label2">
+        <p>MAP</p>
+        </label>
+        <input type="checkbox" id="label2" class="cssacc" />
+        <div class="accshow">
+          <!-- <p>content</p>
+          <p>content</p>
+          <p>content</p>
+          <p>content</p> -->
+        </div>
+
+        <label for="label3">
+          <p>SPOT</p><p>＋</p>
+        </label>
+        <input type="checkbox" id="label3" class="cssacc" />
+        <div class="accshow">
+          <p>小松</p>
+          <p>内妻</p>
+          <p>宍喰</p>
+          <p>郁美</p>
+        </div>
+
+        <label for="label4">
+          <p>LESSON</p>
+        </label>
+        <input type="checkbox" id="label4" class="cssacc" />
+        <div class="accshow">
+          <!-- <p>content</p>
+          <p>content</p>
+          <p>content</p>
+          <p>content</p> -->
+        </div>
+
+        <label for="label5">
+          <p>CONTACT</p>
+        </label>
+        <input type="checkbox" id="label5" class="cssacc" />
+        <div class="accshow">
+          <!-- <p>content</p>
+          <p>content</p>
+          <p>content</p>
+          <p>content</p> -->
+        </div>
+
+      </div>
+    </div>
 
   </header>
 
