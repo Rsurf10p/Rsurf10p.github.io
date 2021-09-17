@@ -166,18 +166,37 @@ header{
     /* text-align: center; */
   }
 
-  .humb-menu #gnav-content label a{
+  /* .humb-menu #gnav-content label a{
     text-decoration: none;
     color: white;
     display:flex;
     padding: 20px;
+  } */
+
+  /* .humb-menu #gnav-content  a{
+    text-decoration: none;
+    color: white;
+    display:block;
+    padding: 20px;
+  } */
+
+  .humb-menu #gnav-content label p{
+    text-decoration: none;
+    color: white;
+    display:block;
+    padding: 20px;
+  }
+
+  .humb-menu #gnav-content a{
+    text-decoration: none;
+    text-align: left;
   }
 
   .humb-menu input {
     display: none;
   }
 
-  .humb-menu .accshow {
+  /* .humb-menu .accshow {
     height: 0;
     overflow: hidden;
   }
@@ -190,7 +209,7 @@ header{
 
   .humb-menu .cssacc:checked +　.accshow {
     height: auto;
-  }
+  } */
 
 }
 
