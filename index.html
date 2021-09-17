@@ -6,8 +6,9 @@
   <meta charset='utf-8'>
   <title>TOKUSHIMA UNIVERSITY SURFING CLUB</title>
   <link rel="stylesheet" href = "stylesheet.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script type="text/javascript" src="js/footerFixed.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -18,9 +19,9 @@
 <body>
   <!-- header -->
   <header>
+    <a id="top"></a>
     <img src = "image/logo.png" class = "header_logo">
     <h1 class="header_title">
-      <a id="top"></a>
       <span>T</span>okushima <span>U</span>iversity <span>S</span>urfing <span>C</span>lub
     </h1>
 
@@ -112,13 +113,17 @@
 
   </header>
 
+  <!-- pagetop icon -->
+  <div id="page-top"><a href="#top"></a></div>
+
+
   <!-- main -->
   <!-- img -->
   <img src = "image/home.jpg" class = "home_img">
 
   <!-- content -->
   <div class="content_map">
-    <h1><a id="map">MAP</a></h1>
+    <h1><a id="map">AREA MAP</a></h1>
     <div class="areamap">
       <img src="image/tokushima.png" usemap="#ImageMap" alt="mapimage" class="areamap_image" />
         <map name="ImageMap">

@@ -4,9 +4,6 @@
   padding:0;
 }
 
-/* html{
-  scroll-behavior: smooth;
-} */
 
 /* 　ーーーーーーーーー　body全体　ーーーーーーーーー */
 body{
@@ -42,7 +39,7 @@ header{
   font-weight: bold;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
   header{
     padding: 10px 10px;
   }
@@ -58,6 +55,7 @@ header{
     padding: 20px 5px 10px 5px;
   }
 
+
   .header_title span{
     font-size: 20px;
     font-weight: bold;
@@ -71,7 +69,7 @@ header{
 /* nav */
 #pcnav{
   text-align: center;
-  margin: 40px 100px auto auto;
+  margin: 40px 50px auto auto;
 }
 
 #pcnav ul{
@@ -82,8 +80,23 @@ header{
 #pcnav ul li{
   list-style: none;
   display: inline-block;
+  padding: 0 5px;
+  /* border-left:  solid 0.5px #000000;
+  border-right : solid 0.5px #000000; */
+  display: table-cell;
+
+}
+
+#pcnav ul li :hover{
+  background-color: #708090		;
+  color: white;
+  transition: 0.5s;
+}
+
+#pcnav ul li a {
   padding: 10px;
 }
+
 
 #pcnav ul li a{
   text-decoration: none;
@@ -94,12 +107,11 @@ header{
   display:none;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
   #pcnav{
     display:none;
   }
 
-  /* ------------------------- */
   .humb-menu{
     display: inline-block;
 
@@ -181,17 +193,60 @@ header{
   }
 
 }
-  /* ------------------------- */
 
 
 /* ーーーーーーーーー　main内　ーーーーーーーーー */
+/* pagetop icon */
+#page-top{
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #708090	;
+  opacity: 0.7;
+}
+
+#page-top a{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 70px;
+  text-decoration: none;
+}
+
+#page-top a:before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f062';
+  font-size: 45px;
+  color: #fff;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width:1000px){
+  #page-top{
+    display: none;
+  }
+}
+
+
 /* img */
 .home_img{
   width:100%;
   height:auto;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
   .home_img{
     width: 100%;
     height: 250px;
@@ -210,7 +265,7 @@ header{
   height: auto;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
   .content_map{
     padding: 20px;
   }
@@ -259,7 +314,7 @@ header{
   margin: auto 0 0 30px;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
   .content_spot{
     padding: 20px;
   }
@@ -317,7 +372,7 @@ header{
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
   .content_lesson{
     padding: 20px 10px;
   }
@@ -365,7 +420,11 @@ footer{
   color: silver;
   font-size: 30px;
   padding: 5px;
+}
 
+.icon :hover{
+  color:gray;
+  transition: 0.7s;
 }
 
 .copyright{
@@ -373,7 +432,7 @@ footer{
   font-size: 14px;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
   .icon a{
     font-size: 25px;
     padding: 5px;
