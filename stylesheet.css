@@ -22,7 +22,7 @@ body{
   bottom:0;
   margin: auto;
   background-color:#fff;
-  z-index:100;
+  z-index:10000;
   -webkit-animation: byeShutter 2.4s forwards;
   animation: byeShutter 2.4s forwards;
 }
@@ -316,10 +316,39 @@ header{
 
 
 /* img */
-.home_img{
+
+.slider_box{
+  z-index: 10;
+}
+
+.slider_box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.bx-wrapper{
+  border:none!important;
+  box-shadow: none!important;
+}
+.slider_box{
+  width: 100%;
+}
+
+
+.bx-viewport .slider li{
+  display: block!important;
+}
+li{
+  display: none;
+}
+
+
+/* -------------------------------- */
+
+/* .home_img{
   width:100%;
   height:auto;
-}
+} */
 
 @media screen and (max-width:1000px){
   .home_img{
