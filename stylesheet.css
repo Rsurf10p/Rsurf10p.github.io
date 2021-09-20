@@ -142,12 +142,15 @@ header{
   border-right : solid 0.5px #000000; */
   display: table-cell;
 
+
 }
 
 #pcnav ul li :hover{
   background-color: #708090		;
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
+  border-radius: 5px;
+
 }
 
 #pcnav ul li a {
