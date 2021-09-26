@@ -168,14 +168,15 @@
   <div class="content_map">
     <h1 class='content_title'>AREA MAP</h1>
     <div class="areamap">
-      <img src="image/tokushima.png" usemap="#ImageMap" alt="mapimage" class="areamap_image" />
-        <map name="ImageMap">
-          <area shape="circle" coords="296,62,21" href="https://www.yasushimurata.com/" alt="" />
-          <area shape="circle" coords="255,222,16" href="#" alt="" />
-          <area shape="circle" coords="217,236,21" href="#" alt="" />
-          <area shape="circle" coords="293,202,19" href="#" alt="" />
-          <area shape="circle" coords="294,122,14" href="#" alt="" />
-        </map>
+      <img src="image/map.png" class="areamap_image" usemap="#ImageMap" alt="" />
+      <map name="ImageMap">
+        <area shape="circle" coords="817,285,48" href="#" alt="" id="area1"/>
+        <p class="sample2">小松海岸</p>
+        <area shape="circle" coords="881,434,52" href="#" alt="" />
+        <area shape="circle" coords="648,676,42" href="#" alt="" />
+        <area shape="circle" coords="598,738,38" href="#" alt="" />
+        <area shape="circle" coords="548,800,37" href="#" alt="" />
+      </map>
     </div>
   </div>
 
@@ -291,10 +292,27 @@
     <p class="copyright">&copy; TOKUSHIMA UNIVERSITY SURFING CLUB</p>
   </footer>
 
+  <!-- slider -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="js/slider.js"></script>
+
+  <!-- map responsive -->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $('img[usemap]').rwdImageMaps();
+  </script>
+
+<script>
+$(function(){
+  $('area').hover(
+   function() { $(this).focus(); },
+   function() { $(this).blur(); }
+  )
+});
+</script>
 
 
 </body>

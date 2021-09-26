@@ -390,8 +390,12 @@ li{
 }
 
 .areamap_image{
-  width: 40vw;
+  width: 60vw;
   height: auto;
+  margin: 20px 0;
+  border: solid 5px #5d627b;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
 
@@ -412,8 +416,11 @@ li{
   } */
 
   .areamap_image{
-    width: 60vw;
+    width: 85vw;
     height: auto;
+    border: solid 3px #5d627b;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.22);
   }
 }
 
