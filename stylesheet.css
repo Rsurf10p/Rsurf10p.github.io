@@ -392,12 +392,15 @@ li{
 .areamap_image{
   width: 60vw;
   height: auto;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   border: solid 5px #5d627b;
   border-radius: 5px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
+.content_map p{
+  font-size: 0.7em;
+}
 
 @media screen and (max-width:1000px){
 
