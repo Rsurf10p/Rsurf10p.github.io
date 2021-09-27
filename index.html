@@ -170,12 +170,11 @@
     <div class="areamap">
       <img src="image/map.png" class="areamap_image" usemap="#ImageMap" alt="" />
       <map name="ImageMap">
-        <area shape="circle" coords="817,285,48" href="#" alt="" id="area1"/>
-        <p class="sample2">小松海岸</p>
-        <area shape="circle" coords="881,434,52" href="#" alt="" />
-        <area shape="circle" coords="648,676,42" href="#" alt="" />
-        <area shape="circle" coords="598,738,38" href="#" alt="" />
-        <area shape="circle" coords="548,800,37" href="#" alt="" />
+        <area shape="circle" coords="817,285,48" href="#" alt="" id="map_komatu" />
+        <area shape="circle" coords="881,434,52" href="#" alt="" id="map_tatumi" />
+        <area shape="circle" coords="648,676,42" href="#" alt="" id="map_utizuma" />
+        <area shape="circle" coords="598,738,38" href="#" alt="" id="map_shirahama"/>
+        <area shape="circle" coords="548,800,37" href="#" alt="" id="map_ikumi"/>
       </map>
     </div>
   </div>
@@ -297,22 +296,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/maphover.js"></script>
 
   <!-- map responsive -->
-  <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
   <script>
     $('img[usemap]').rwdImageMaps();
   </script>
-
-<script>
-$(function(){
-  $('area').hover(
-   function() { $(this).focus(); },
-   function() { $(this).blur(); }
-  )
-});
-</script>
 
 
 </body>
