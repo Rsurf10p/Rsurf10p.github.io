@@ -96,7 +96,7 @@ header{
   font-weight: bold;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1110px){
   header{
     padding: 10px 10px;
   }
@@ -167,7 +167,7 @@ header{
   display:none;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1110px){
   #pcnav{
     display:none;
   }
@@ -319,7 +319,7 @@ header{
   color: white;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1110px){
   #page-top{
     display: none;
   }
