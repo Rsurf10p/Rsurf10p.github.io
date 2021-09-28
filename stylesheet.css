@@ -444,8 +444,10 @@ li{
   width:25vw;
   vertical-align: top;
   background: white;
-  border-top: solid 3px #5d627b;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  /* border-top: solid 3px #AAAAAA	; */
+  border: solid 1px #AAAAAA	;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.22);
+  /* box-shadow: 4px 4px #CCCCCC	; */
   display: inline-block;　
 }
 
@@ -457,12 +459,15 @@ li{
 .box h1 {
   font-size: 20px;
   display: inline;
-  background:linear-gradient(transparent 60%, #8EB8FF	0%);
+  background:linear-gradient(transparent 60%, #B0E0E6	0%);
   margin-bottom: 20px;
   /* text-align: center; */
   font-weight: normal;
   font-family: sans-serif;
+}
 
+.box h1 span{
+  font-size: 16px;
 }
 
 .box h2{
@@ -472,6 +477,7 @@ li{
   border: solid 1px silver;
   border-radius: 1px;
   margin-top: 10px;
+  background-color: #EEEEEE	;
 }
 
 
@@ -504,7 +510,7 @@ li{
   .box{
     padding: ;
     width:auto;
-    margin:10px 0;
+    margin:15px 0;
     display: block;　
   }
 
@@ -548,10 +554,12 @@ li{
 
 .sentence_lesson h1 {
   font-size: 24px;
+  font-weight: normal;
   font-family: sans-serif;
 }
 
 .sentence_lesson p{
+  font-weight: lighter;
   font-family: sans-serif;
 
 }
