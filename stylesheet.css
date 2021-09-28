@@ -457,10 +457,25 @@ li{
   background:linear-gradient(transparent 90%, silver 0%);
   margin-bottom: 5px;
   text-align: center;
+  font-weight: normal;
+  font-family: sans-serif;
+
 }
+
+.box h2{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: solid 1px silver;
+  
+}
+
+
 
 .box p{
   margin: 5px 0px;
+  font-family: sans-serif;
+
 }
 
 .box_image{
@@ -527,6 +542,12 @@ li{
 
 .sentence_lesson h1 {
   font-size: 24px;
+  font-family: sans-serif;
+}
+
+.sentence_lesson p{
+  font-family: sans-serif;
+
 }
 
 
