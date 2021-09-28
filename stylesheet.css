@@ -197,7 +197,8 @@ header{
 
   #gnav-content {
     text-align: center;
-    background-color: rgba(112,128,144,0.95);
+    /* background-color: rgba(112,128,144,0.95); */
+    background-color: rgba(221,221,221,0.95)	;
     position: fixed;
     top: -100%;
     left: 0;
@@ -210,8 +211,9 @@ header{
     padding: 10px 0 0 0;
     color: white;
     font-weight: bold;
-    background-color: rgba(112,128,144,1);
-    border-bottom: 5px solid silver;
+    /* background-color: rgba(112,128,144,1); */
+    background-color:#DDDDDD	;
+    border-bottom: 3px solid silver	;
   }
 
   .humbmenu_logo{
@@ -247,7 +249,7 @@ header{
 
   .humb-menu #gnav-content label p{
     text-decoration: none;
-    color: white;
+    color: #555555	;
     display:block;
     padding: 20px;
   }
@@ -449,14 +451,15 @@ li{
 
 .sentence_box{
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .box h1 {
   font-size: 20px;
-  background:linear-gradient(transparent 90%, silver 0%);
-  margin-bottom: 5px;
-  text-align: center;
+  display: inline;
+  background:linear-gradient(transparent 60%, #8EB8FF	0%);
+  margin-bottom: 20px;
+  /* text-align: center; */
   font-weight: normal;
   font-family: sans-serif;
 
@@ -465,15 +468,17 @@ li{
 .box h2{
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
   border: solid 1px silver;
-  border-radius: 3px;
+  border-radius: 1px;
+  margin-top: 10px;
 }
 
 
 
 .box p{
-  margin: 5px 0px;
+  margin: 5px 0 0 0;
+  text-align: left;
   font-family: sans-serif;
 
 }
@@ -481,8 +486,9 @@ li{
 .box_image{
   /* width: 300px; */
   /* height: 200px; */
-  width: 90%;
+  width: 100%;
   height: auto;
+  margin-top: 10px;
   /* margin: auto 0 0 30px; */
 }
 
@@ -509,9 +515,9 @@ li{
 
 
   .box_image{
-    width:90%;
+    width:100%;
     height:auto;
-    margin:0;
+    margin-top:10px;
   }
 
 }
