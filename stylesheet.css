@@ -564,6 +564,73 @@ li{
 
 }
 
+/* ########セクションスタイル############# */
+.lesson_detail h1 {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem 2rem 1.5rem 130px;
+  border: 2px solid #333333	;
+  color: #333333;
+}
+
+.lesson_detail h1:before {
+  position: absolute;
+  top: -150%;
+  left: -100px;
+  width: 200px;
+  height: 300%;
+  content: '';
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  background:#333333	;
+}
+
+.lesson_detail h1 span {
+  /* font-size: 40px; */
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-top: 10px;
+  padding-left: 16px;
+  color: white;
+}
+
+/* ########################## */
+
+.lesson_detail h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  position: relative;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #D2691E	;
+  border-radius: 0 10px 10px 10px;
+  background: #FFE4C4		;
+  margin-top: 30px;
+}
+
+.lesson_detail h2:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 15px;
+  /* font-size: 1.5rem; */
+  position: absolute;
+  top: -25px;
+  left: 0;
+  height: 25px;
+  padding: 0 1em;
+  content: '\f0a4  POINT';
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  background:#D2691E	;
+}
+
+
+
+/* ######################### */
 
 @media screen and (max-width:1000px){
   .content_lesson{
@@ -577,7 +644,7 @@ li{
   .lesson_detail{
     display: inline-block;
     text-align: center;
-    margin:15px 10px;
+    margin:15px 0px;
   }
 
   .lesson_image{
@@ -591,9 +658,33 @@ li{
   }
 
   .sentence_lesson h1{
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin: 10px 0;
   }
+
+/* ---------------------------------- */
+
+
+  .lesson_detail h1{
+    padding: 10px 2rem 10px 130px;
+  }
+
+
+  .lesson_detail h1 span {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+
+/* -------------------------------------- */
+
+  .lesson_detail h2 {
+    font-size: 16px;
+    padding: 1rem ;
+  }
+
+
+
+/* -------------------------------------- */
 }
 
 
