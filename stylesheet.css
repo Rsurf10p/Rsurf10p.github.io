@@ -459,7 +459,7 @@ li{
 .box h1 {
   font-size: 20px;
   display: inline;
-  background:linear-gradient(transparent 60%, #B0E0E6	0%);
+  background:linear-gradient(transparent 60%, #FFE4C4			0%);
   margin-bottom: 20px;
   /* text-align: center; */
   font-weight: normal;
@@ -552,11 +552,10 @@ li{
   margin-left: 20px;
 }
 
-.sentence_lesson h1 {
+/* .sentence_lesson h1 {
   font-size: 24px;
-  font-weight: normal;
-  font-family: sans-serif;
-}
+
+} */
 
 .sentence_lesson p{
   font-weight: lighter;
@@ -565,15 +564,20 @@ li{
 }
 
 /* ########セクションスタイル############# */
-.lesson_detail h1 {
+.lesson_number {
   position: relative;
   overflow: hidden;
   padding: 1.5rem 2rem 1.5rem 130px;
   border: 2px solid #333333	;
   color: #333333;
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-family: sans-serif;
+  background-color: #EEEEEE;
 }
 
-.lesson_detail h1:before {
+.lesson_number:before {
   position: absolute;
   top: -150%;
   left: -100px;
@@ -585,7 +589,7 @@ li{
   background:#333333	;
 }
 
-.lesson_detail h1 span {
+.lesson_number span {
   /* font-size: 40px; */
   font-family: sans-serif;
   font-size: 2.5rem;
@@ -603,7 +607,7 @@ li{
 
 .lesson_detail h2 {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   padding: 1rem 2rem;
   text-align: center;
@@ -642,35 +646,41 @@ li{
   } */
 
   .lesson_detail{
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
     margin:15px 0px;
+    /* display: flex; */
+    flex-direction:column;
   }
 
   .lesson_image{
     width: 100%;
     height: auto;
+    order: 1;
+    margin-bottom: 5px;
   }
 
   .sentence_lesson{
     text-align: left;
-    margin-left: 0;
+    margin: 0 0 10px 0;
   }
 
-  .sentence_lesson h1{
+  /* .sentence_lesson h1{
     font-size: 18px;
-    margin: 10px 0;
-  }
+
+  } */
 
 /* ---------------------------------- */
 
 
-  .lesson_detail h1{
+  .lesson_number{
     padding: 10px 2rem 10px 130px;
+    font-size: 18px;
+    margin: 0 0 10px 0;
   }
 
 
-  .lesson_detail h1 span {
+  .lesson_detail span {
     font-size: 2rem;
     padding-top: 0;
   }
