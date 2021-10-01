@@ -8,6 +8,10 @@ if (windowSize < 1000) {
 } else {
   console.log('Large!');
   $('#lesson0_number ,#lesson0_sentence').wrapAll('<div class="lesson_wrap">');
+  $('#lesson1_number ,#lesson1_sentence').wrapAll('<div class="lesson_wrap">');
+  $('#lesson2_number ,#lesson2_sentence').wrapAll('<div class="lesson_wrap">');
+  $('#lesson3_number ,#lesson3_sentence').wrapAll('<div class="lesson_wrap">');
+  $('#lesson4_number ,#lesson4_sentence').wrapAll('<div class="lesson_wrap">');
   value=1;
 }
 console.log(value);
