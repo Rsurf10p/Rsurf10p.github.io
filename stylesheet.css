@@ -548,9 +548,9 @@ li{
   height: auto;
 }
 
-.sentence_lesson{
+/* .sentence_lesson{
   margin-left: 20px;
-}
+} */
 
 /* .sentence_lesson h1 {
   font-size: 24px;
@@ -560,8 +560,13 @@ li{
 .sentence_lesson p{
   font-weight: lighter;
   font-family: sans-serif;
-
 }
+
+.lesson_wrap{
+  margin-left: 20px;
+  flex-flow: column;
+}
+
 
 /* ########セクションスタイル############# */
 .lesson_number {
@@ -575,6 +580,7 @@ li{
   font-weight: normal;
   font-family: sans-serif;
   background-color: #EEEEEE;
+
 }
 
 .lesson_number:before {
@@ -663,6 +669,7 @@ li{
   .sentence_lesson{
     text-align: left;
     margin: 0 0 10px 0;
+    order: 2;
   }
 
   /* .sentence_lesson h1{
@@ -677,6 +684,7 @@ li{
     padding: 10px 2rem 10px 130px;
     font-size: 18px;
     margin: 0 0 10px 0;
+    order: 0;
   }
 
 
