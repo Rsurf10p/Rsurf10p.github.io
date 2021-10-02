@@ -432,23 +432,47 @@ li{
 
 
 /* spot */
+
 .content_spot {
   text-align: center;
   padding: 20px 30px;
 }
 
+.spot_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+
+}
+
 .box{
+  width:29%;
+
   padding: 0.5em 1em;
   /* margin: 10px 50px 25px 50px; */
-  margin:15px 10px 10px 10px;
-  width:25vw;
+  /* margin:15px 10px 10px 10px; */
+  margin:10px 10px;
+  /* width:25vw; */
   vertical-align: top;
   background: white;
   /* border-top: solid 3px #AAAAAA	; */
   border: solid 1px #AAAAAA	;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.22);
   /* box-shadow: 4px 4px #CCCCCC	; */
-  display: inline-block;　
+  display: flex;　
+  /* position: relative; */
+}
+
+.box_wrap{
+  flex-flow: column;
+  display: flex;　
+
+}
+
+@media screen and (max-width:1320px){
+  .box{
+    width: 45%;
+  }
 }
 
 .sentence_box{
@@ -494,11 +518,13 @@ li{
   /* height: 200px; */
   width: 100%;
   height: auto;
-  margin-top: 10px;
-  /* margin: auto 0 0 30px; */
+  margin-top: auto;
+  /* position: absolute; */
+  /* margin: auto 0 0 0; */
+  /* bottom: 0; */
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:1160px){
   .content_spot{
     padding: 20px;
   }
