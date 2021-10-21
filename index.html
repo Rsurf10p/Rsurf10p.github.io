@@ -58,78 +58,39 @@
       </label>
 
       <div id="gnav-content">
-        <!-- タイトルを記載ください -->
         <div class="humb-menu__title">
           <img src = "image/logo.png" class = "humbmenu_logo">
         </div>
 
         <a href="#top">
           <label for="gnav-input">
-            <!-- 親要素の名前 -->
             <p>TOP</p>
-            <!-- <p><a href="#top">TOP</a></p> -->
           </label>
         </a>
-        <!-- <input type="checkbox" id="label1" class="cssacc" />
-        <div class="accshow"> -->
-          <!-- 子要素の名前 -->
-          <!-- <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-        </div> -->
 
         <a href="#map">
           <label for="gnav-input">
             <p>AREA MAP</p>
           </label>
         </a>
-        <!-- <input type="checkbox" id="label2" class="cssacc" />
-        <div class="accshow">
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-        </div> -->
 
         <a href="#spot">
           <label for="gnav-input">
             <p>SURF SPOT</p>
           </label>
         </a>
-        <!-- <input type="checkbox" id="label3" class="cssacc" />
-        <div class="accshow">
-          <p>小松</p>
-          <p>内妻</p>
-          <p>宍喰</p>
-          <p>郁美</p>
-        </div> -->
 
         <a href="#lesson">
           <label for="gnav-input">
             <p>ONLINE LESSON</p>
           </label>
         </a>
-        <!-- <input type="checkbox" id="label4" class="cssacc" />
-        <div class="accshow">
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-        </div> -->
 
         <a href="#contact">
           <label for="gnav-input">
             <p>CONTACT</p>
           </label>
         </a>
-        <!-- <input type="checkbox" id="label5" class="cssacc" />
-        <div class="accshow">
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-        </div> -->
 
       </div>
     </div>
@@ -142,7 +103,6 @@
 
   <!-- main -->
   <!-- img -->
-  <!-- <img src = "image/home.jpg" class = "home_img"> -->
   <div class="slider_box">
     <ul class="slider">
       <li><img id="img1" src="image/profile2.jpg" alt=""></li>
@@ -159,23 +119,26 @@
   </div> -->
 
 
-<!-- <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=33.115&lon=134.314&detailLat=33.548&detailLon=134.360&width=650&height=450&zoom=7&level=surface&overlay=waves&product=ecmwfWaves&menu=&message=true&marker=&calendar=24&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe> -->
-<!-- <iframe src="http://weather-gpv.info/parts/bpm.php?model=cwm&element=wv&latsc=1&w=250&h=350&area=cs&lx=531&ly=308" width=250 height=350 scrolling=NO frameborder=0 border=0 marginwidth=0 marginheight=0></iframe> -->
-
-
-
   <!-- content -->
   <a id="map"></a>
   <div class="content_map">
     <h1 class='content_title'>AREA MAP</h1>
     <div class="areamap">
       <img src="image/map.png" class="areamap_image" usemap="#ImageMap" alt="" />
-      <map name="ImageMap">
-        <area shape="circle" coords="817,285,48" href="https://ameblo.jp/glaresurf/"　target="_blank" alt="komatu" id="map_komatu" />
-        <area shape="circle" coords="881,434,52" href="https://ameblo.jp/ikumi-michishio/" target="_blank"　alt="tatumi" id="map_tatumi" />
+      <!-- <map name="ImageMap">
+        <area shape="circle" coords="818,276,32" href="https://ameblo.jp/glaresurf/"　target="_blank" alt="komatu" id="map_komatu" />
+        <area shape="circle" coords="877,448,32" href="https://ameblo.jp/ikumi-michishio/" target="_blank"　alt="tatumi" id="map_tatumi" />
         <area shape="circle" coords="648,676,42" href="https://ameblo.jp/ikumi-michishio/" target="_blank"　alt="utizuma" id="map_utizuma" />
         <area shape="circle" coords="598,738,38" href="https://ameblo.jp/ikumi-michishio/" target="_blank"　alt="shirahama" id="map_shirahama"/>
         <area shape="circle" coords="548,800,37" href="https://ameblo.jp/ikumi-michishio/" target="_blank"　alt="ikumi" id="map_ikumi"/>
+      </map> -->
+      <map name="ImageMap">
+        <area shape="circle" coords="818,276,32" href="https://ameblo.jp/glaresurf/"　target="_blank" alt="komatu" id="map_komatu" />
+        <area shape="circle" coords="877,448,32" href="#map" alt="tatumi" id="map_tatumi" />
+        <area shape="circle" coords="649,672,29" href="#map" alt="utizuma" id="map_utizuma" />
+        <area shape="circle" coords="606,713,28" href="#map" alt="shishikui" id="map_shishikui"/>
+        <area shape="circle" coords="566,753,27" href="#map" alt="shirahama" id="map_shirahama"/>
+        <area shape="circle" coords="533,800,26" href="https://www.youtube.com/watch?v=nJ21An9OwgA" target="_blank"　 alt="ikumi" id="map_ikumi"/>
       </map>
     </div>
     <p>（ピンをタップするとオンラインレッスン動画に飛びます。）</p>
@@ -199,9 +162,9 @@
             <p>波質：ダンパー多め。潮の満ち引きにより若干の変動あり。</p>
             <p>潮の狙い目：小波=干潮、中,大波=満潮。満潮波の大きさにより変動あり。</p>
             <h2>CAUTION</h2>
-            <p>ダンパーな波質なため、ボードクラッシュに注意。堤防の付近はカレントに注意。</p>
+            <p>ダンパーな波質なため、ボードクラッシュに注意。堤防の付近はカレントに注意。夏には海水浴場にて規制があるため注意。</p>
           </div>
-          <img src = "image/profile.jpg" class = "box_image">
+          <img src = "image/komatu.jpg" class = "box_image">
         </div>
       </div>
 
@@ -218,7 +181,7 @@
             <h2>CAUTION</h2>
             <p>カレントが強いため注意。満潮時、砂浜が見えず危険。</p>
           </div>
-          <img src = "image/profile.jpg" class = "box_image">
+          <img src = "image/tatsumi.jpg" class = "box_image">
         </div>
       </div>
 
@@ -252,7 +215,24 @@
             <h2>CAUTION</h2>
             <p>満潮時にはテトラポットが海水に浸かるため、サーフィン時には注意。</p>
           </div>
-          <img src = "image/profile.jpg" class = "box_image">
+          <img src = "image/shishikui.jpg" class = "box_image">
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_wrap">
+          <div class="sentence_box">
+            <h1>白浜海岸 <span>(Shirahama)</span></h1>
+            <h2>ACCESS</h2>
+            <p>〒781-7413 高知県安芸郡東洋町白浜</p>
+            <h2>FEATURE</h2>
+            <p>うねり：南</p>
+            <p>波質：優しい</p>
+            <p>潮の狙い目：常に良い</p>
+            <h2>CAUTION</h2>
+            <p>台風時など良い波がくる。夏は海水浴場として規制があるため注意。</p>
+          </div>
+          <img src = "image/shirahama.jpg" class = "box_image">
         </div>
       </div>
 
@@ -269,7 +249,7 @@
             <h2>CAUTION</h2>
             <p>ポイント中央に岩があるため注意。</p>
           </div>
-          <img src = "image/profile.jpg" class = "box_image">
+          <img src = "image/ikumi.jpg" class = "box_image">
         </div>
       </div>
       
@@ -281,35 +261,35 @@
     <h1 class='content_title'>ONLINE LESSON</h1>
 
     <div class="lesson_detail">
-      <img src = "image/profile.jpg" class = "lesson_image">
+      <img src = "image/0.png" class = "lesson_image">
       <h1 class="lesson_number" id='lesson0_number'><span>00</span>パドリング</h1>
       <div class="sentence_lesson" id='lesson0_sentence'>
         <p>波に乗るためにはパドリングが必要です。波がきたと思ったら、まずはパドリングをしましょう。</p>
-        <h2>胸を張って、常に顔をあげ前を向くようにしましょう！</h2>
+        <h2>常に、胸を張って、顔をあげ、目線が前に向くようにしましょう！</h2>
       </div>
     </div>
 
     <div class="lesson_detail">
-      <img src = "image/profile.jpg" class = "lesson_image">
-      <h1 class="lesson_number" id='lesson1_number'><span>01</span>しゃちほこ</h1>
+      <img src = "image/1.png" class = "lesson_image">
+      <h1 class="lesson_number" id='lesson1_number'><span>01</span>腕立ての姿勢</h1>
       <div class="sentence_lesson" id='lesson1_sentence'>
         <p>はじめに、手を胸の横につけます。そして、腕を伸ばして体を持ち上げる姿勢を作ります。</p>
-        <h2>前を向き、しゃちほこ意識！</h2>
+        <h2>腕ををつく際、目線を下に落とさないようにしましょう！</h2>
       </div>
     </div>
 
     <div class="lesson_detail">
-      <img src = "image/profile.jpg" class = "lesson_image">
-      <h1 class="lesson_number" id='lesson2_number'><span>02</span>膝着きしゃちほこ</h1>
+      <img src = "image/2.png" class = "lesson_image">
+      <h1 class="lesson_number" id='lesson2_number'><span>02</span>右膝をつく</h1>
       <div class="sentence_lesson" id='lesson2_sentence'>
         <p>次に立った際、後ろ足になる足の膝をおへその下につきます。その際に足の指先は立てるようにします。</p>
-        <h2>ここでは爪先立てること意識しよう！</h2>
+        <h2>つま先を立てるようにしましょう！</h2>
       </div>
     </div>
 
     <div class="lesson_detail">
-      <img src = "image/profile.jpg" class = "lesson_image">
-      <h1 class="lesson_number" id='lesson3_number'><span>03</span>スタート姿勢</h1>
+      <img src = "image/3.png" class = "lesson_image">
+      <h1 class="lesson_number" id='lesson3_number'><span>03</span>左足をつく</h1>
       <div class="sentence_lesson" id='lesson3_sentence'>
         <p>立った際に、前足になる足を手と手の間につきます。その際に手がサーフボードから離れないようにしましょう。</p>
         <h2>手はサーフボードから離さないようにしましょう！</h2>
@@ -317,11 +297,11 @@
     </div>
 
     <div class="lesson_detail">
-      <img src = "image/profile.jpg" class = "lesson_image">
+      <img src = "image/4.png" class = "lesson_image">
       <h1 class="lesson_number" id='lesson4_number'><span>04</span>立ち上がる</h1>
       <div class="sentence_lesson" id='lesson4_sentence'>
         <p>最後にサーフボードについていた手を離し、バランスを取りながら立ち上がりましょう。膝は常に軽く曲げた状態をキープします。</p>
-        <h2>立ち上がるときはバランスを取りましょう！</h2>
+        <h2>目線を行きたい方向に向け立ちましょう！</h2>
       </div>
     </div>
 

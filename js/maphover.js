@@ -32,6 +32,18 @@ $(function(){
       }
     );
 
+  $("#map_shishikui").hover(
+      function() {
+        $(".areamap_image").attr("src", "image/map_shishikui.png");
+        // $(this).addClass("is-hover");
+      },
+      function() {
+        $(".areamap_image").attr("src", "image/map.png");
+        // $(this).removeClass("is-hover");
+      }
+    );
+
+
   $("#map_shirahama").hover(
       function() {
         $(".areamap_image").attr("src", "image/map_shirahama.png");
