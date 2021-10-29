@@ -93,7 +93,7 @@ header{
 
 .header_title span{
   font-size: 30px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 @media screen and (max-width:1110px){
